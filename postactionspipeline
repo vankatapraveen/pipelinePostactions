@@ -24,7 +24,7 @@ echo 'if the output ot result is not run success and  is unstable'
 }
 
 failure{
-echo "Only on Failure'
+echo 'Only on Failure'
 }
 
 
