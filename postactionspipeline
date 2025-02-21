@@ -1,0 +1,31 @@
+pipeline{
+agents any
+stages{
+ stage('build')
+{
+steps{
+bat 'java --version'
+}
+}
+
+}
+post{
+
+always{
+echo 'ALWAYS'
+}
+
+success{
+echo 'only on success'
+}
+
+unstable{
+echo 'if the output ot result is not run success and  is unstable'
+}
+
+failure{
+echo "Only on Failure'
+}
+
+
+
